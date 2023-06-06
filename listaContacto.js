@@ -36,11 +36,11 @@ function agregarContacto(){
     contactos.push(contacto3);      
 }
 
-borrar = prompt("Nombre del contacto a eliminar")
-function eliminarContacto(){ //pop(al final) shift(al comienzo)
-    let borrar = contactos.includes(borrarContacto);
-    if (borrar == true){
-        let posicion = contactos.indexOf(borrarContacto);
+let borrar = prompt("Id del contacto a eliminar")
+function eliminarContacto(){ 
+    let borrar = contactos.includes(borrar);
+    if (contactos[0].id == borrar){
+        let posicion = contactos.indexOf(borrar);
         contactos.splice(posicion,1);
         return contactos
     }
