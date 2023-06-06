@@ -2,7 +2,7 @@ let contactos = ["Victor Suarez", "Manuel Huertas", "Ada Script", "Visual Front"
 let nuevoContacto = prompt("Ingresa el nuevo contacto a registrar");
 let borrarContacto = prompt("Ingresa el contacto a eliminar");
 
-function agregarContacto(nuevoContacto){ //push(al final) unshift(al comienzo)
+function agregarContacto(nuevoContacto){ 
     let incluir = contactos.includes(nuevoContacto);
     if (incluir == false){
         contactos.unshift(nuevoContacto);
@@ -13,7 +13,7 @@ function agregarContacto(nuevoContacto){ //push(al final) unshift(al comienzo)
     }      
 }
 
-function eliminarContacto(){ //pop(al final) shift(al comienzo)
+function eliminarContacto(){ 
     let borrar = contactos.includes(borrarContacto);
     if (borrar == true){
         let posicion = contactos.indexOf(borrarContacto);
@@ -27,7 +27,7 @@ function eliminarContacto(){ //pop(al final) shift(al comienzo)
 
 function imprimirConsola(){ 
     agregarContacto(nuevoContacto);
-    eliminarContacto()
+    eliminarContacto();
     return contactos;     
 }
 
