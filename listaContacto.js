@@ -70,8 +70,7 @@ function eliminarContacto(){
     } 
     else{
         alert("EL contacto a eliminar con la ID indicada NO existe." )
-    }        
-              
+    }                     
 }
 
 function imprimirConsola(){ 
